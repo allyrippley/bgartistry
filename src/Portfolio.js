@@ -17,23 +17,18 @@ class App extends Component {
           </div>
           <div className="nav-links">
             <span>Home</span>
-            <span>Services</span>
+            <span>Work</span>
             <span>About</span>
-            <span>Schedule</span>
+            <span>Contact</span>
             <span>FAQs</span>
           </div>
         </header>
-        <div className="App-intro">
-          <div><img src={image5} /></div>
-          <div>
-            <p>test text</p>
-            <span className="button">
-              Book now!
-            </span>
-
-          </div>
-
-        </div>
+        <p className="App-intro">
+          <img src={image1} />
+          <img src={image2} />
+          <img src={image3} />
+          
+        </p>
       </div>
     );
   }

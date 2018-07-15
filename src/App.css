@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  overflow-x: hidden;
 }
 
 .App-logo {
@@ -9,17 +10,51 @@
 
 .App-header {
   background-color: #222;
-  height: 150px;
-  padding: 20px;
   color: white;
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
 }
 
+.nav-links span {
+  padding-left: 16px;
+}
 .App-title {
   font-size: 1.5em;
 }
 
 .App-intro {
   font-size: large;
+  display: flex;
+  background-color: black;
+  align-items: center;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+.App-intro div {
+  flex: 1;
+}
+.App-intro div img{
+  width: 100%;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+.App-intro div img:hover {
+  width: 100%;
+  -webkit-filter: inherit; /* Safari 6.0 - 9.0 */
+    filter: inherit;
+}
+.App-intro div {
+  color: white;
+  font-size: 5vh;
+  min-width: 600px;
+}
+.App-intro div .button {
+  color: white;
+  font-size: 3vh;
+  padding: 12px 32px;
+  border: 2px solid white;
+  border-radius: 10px;
 }
 
 @keyframes App-logo-spin {
